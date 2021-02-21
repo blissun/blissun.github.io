@@ -73,16 +73,19 @@ function random_background() {
 
 body.style.backgroundImage = random_background();
 body.style.backgroundRepeat = 'no-repeat';
-body.style.height = window.outerHeight + 'px';
+body.style.height = window.innerHeight + 'px';
 body.style.backgroundPosition = 'center';
 body.style.backgroundSize = 'cover';
 body.classList.add('text-white');
+
+window.addEventListener('resize', () => {
+  body.style.height = window.innerHeight + 'px';
+});
 function init() {
   setInterval(setClock, 1000);
-  // window.document.oncontextmenu = new Function('return false');
-  // window.document.onselectstart = new Function('return false');
-  // window.document.ondragstart = new Function('return false');
-  // time.innerText =
+  window.document.oncontextmenu = new Function('return false');
+  window.document.onselectstart = new Function('return false');
+  window.document.ondragstart = new Function('return false');
 }
 
 init();
