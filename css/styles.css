@@ -15,3 +15,7 @@ input {
 span {
   padding-right: 1rem;
 }
+
+.btn {
+  cursor: pointer;
+}
