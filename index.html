@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Momentum</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="grid">
+  <header class="p-2 justify-self-center"></header>
+  <div class="w-4/5 h-1/2 justify-self-center grid">
+    <div class="username justify-self-center">
+      <input id="user_input" type="text" class="p-1 shadow-none focus:outline-none text-2xl text-black"
+        placeholder="What's your name?">
+      <span id="username" class="hide text-4xl"></span>
+    </div>
+
+    <div class="clock grid justify-self-center">
+      <div class="grid grid-cols-4 gap-4">
+        <div class="time text-8xl col-span-3 text-right">
+          <span id="hours">00</span>:<span id="minutes">00</span>
+        </div>
+        <div class="text-3xl">
+          <div id="meridium" class="text-gray-300">AM</div>
+          <div class="line-through text-gray-300 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div id="seconds" class="text-4xl self-center">00</div>
+        </div>
+      </div>
+      <div class="justify-self-center text-xl mb-10">
+        <span id="year">2021년 </span>
+        <span id="month">2월 </span>
+        <span id="date">1일 </span>
+        <span id="day">일요일 </span>
+      </div>
+
+      <form class="js-form grid justify-self-center">
+        <input type="text" class="justify-self-center bg-transparent focus:outline-none border-b-2"
+          placeholder="add tasks" id="input_task" />
+      </form>
+      <div class="grid grid-cols-2 justify-self-center">
+        <div class="h-1/4">
+          <h1>Todo</h1>
+          <ul id="pending_list"></ul>
+        </div>
+        <div class="h-1/4">
+          <h1>Finished</h1>
+          <ul id="finished_list"></ul>
+        </div>
+      </div>
+
+      <script src="src/index.js"></script>
+    </div>
+
+  </div>
+
+
+
+  <script src="js/index.js"></script>
+  <script src="js/wheather.js"></script>
+  <script src="js/name.js"></script>
+  <script src="js/todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.hide {
+  display: none;
+}
+
+span {
+  padding-right: 1rem;
+}
