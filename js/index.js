@@ -83,9 +83,6 @@ window.addEventListener('resize', () => {
 });
 function init() {
   setInterval(setClock, 1000);
-  window.document.oncontextmenu = new Function('return false');
-  window.document.onselectstart = new Function('return false');
-  window.document.ondragstart = new Function('return false');
 }
 
 init();
